@@ -88,6 +88,7 @@ h1 {
 .app .bottom {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   text-align: center;
   width: 100%;
   margin: 15rem auto;
@@ -98,6 +99,45 @@ h1 {
 
 .bold {
   font-weight: 700;
+}
+
+
+@media ( max-width: 375px) {
+  .app .bottom {
+    background: black;
+    width: 15rem;
+    height: 16rem;
+    position: absolute;
+    bottom: 6rem;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(255,255,255, 0.2);
+    margin-left: 1.8rem;
+  }
+}
+
+
+@media ( max-width: 1400px) {
+    .location p {
+      font-size: 2.5rem;
+    }
+  
+   .temp h1 {
+      font-size: 8rem;
+   }
+
+   .description p {
+      font-size: 2.8rem;
+   }
+
+   .bottom div {
+      width: 10rem;
+      height: 8rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   }
 }
 
 
